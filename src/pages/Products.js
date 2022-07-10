@@ -4,6 +4,7 @@ export default function Products() {
   return (
     <div className="content">
       <h3>Hoodies</h3>
+      <p>Test all</p>
       <div className="products">
         {[0,1,2,3].map(p => (
           <div key={p}>

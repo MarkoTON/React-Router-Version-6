@@ -21,11 +21,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route exact path="/products">
+            <Products />
+          </Route>
           <Route path="/products/:id">
             <ProductDetails />
-          </Route>
-          <Route path="/products">
-            <Products />
           </Route>
         </Switch>
       </BrowserRouter>
