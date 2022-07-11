@@ -1,4 +1,4 @@
-import { Route, useParams, Routes } from "react-router-dom"
+import { Route, useParams, Routes, Link } from "react-router-dom"
 
 // nested routes
 import Offers from "./Offers"
@@ -19,6 +19,10 @@ export default function ProductDetails() {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptate neque harum. Quam facere accusamus exercitationem in quidem mollitia eligendi porro eos voluptates iure incidunt, laudantium sed harum omnis quasi?</p>
         </div>
       </div>
+
+      <p>To check other offers <Link to={`/products/${id}/offers`}>click here.</Link></p>
+
+      <hr />
 
       <Routes>
         <Route path="offers" element={<Offers />} />
