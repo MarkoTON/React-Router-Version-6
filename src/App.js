@@ -18,6 +18,9 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/products">Products</Link>
+          <Link to="/test">Test</Link>
+          <Link to="/redirect">Redirect</Link>
+          <Link to="/checkout">Checkout</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,6 +30,7 @@ function App() {
           <Route path="/test" element={(
             <div>
               <h2>Test page</h2>
+              <p>Metallica</p>
             </div>
           )} />
           <Route path="/redirect" element={<Navigate to="/about" />} />
